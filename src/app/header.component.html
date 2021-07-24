@@ -1,0 +1,16 @@
+<ul class="nav nav-pills">
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/shopping-list']">Einkaufsliste</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/recipes']">Rezeptbuch</a></li>
+    <li>
+        <div class="dropdown" appDropdown>
+            <button id="dLabel" type="button" aria-haspopup="true" aria-expanded="false" class="btn btn-primary">
+                Verwaltung
+                <span class="caret"></span>
+            </button>    
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#" (click)="onStore()">Speichern</a></li>
+                <li><a href="#">Laden</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
